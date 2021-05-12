@@ -1,5 +1,5 @@
 ## Un projet Maven
-- (Objigatoire) Un projet contenant un fichier `pom.xml`
+- (Obligatoire) Un projet contenant un fichier `pom.xml`
 - (optionel mais conseillé) respectant une structure du type 
 <pre>
     racine
@@ -33,7 +33,7 @@ mvn compile
 mvn test
 `````
 
-### Un cycle de vie predefinie
+### Un cycle de vie prédéfini
 La commande `mvn test` va lancer plusieurs goals à la suite.
    
     1. process-resources
