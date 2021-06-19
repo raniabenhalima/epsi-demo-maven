@@ -5,10 +5,10 @@ pipeline {
 	        args '-v /data/repos/.m2:/root/.m2'
          }
     }
-    tools {
+/*    tools {
         maven 'maven'
         jdk 'Java11'
-    }
+    }*/
     stages {
         stage('prepare') {
             steps {
