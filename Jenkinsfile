@@ -32,7 +32,10 @@ pipeline {
         }
         stage('execute') {
             steps {
-               sh 'cd target && java -cp maven-hello-1.0.0-SNAPSHOT.jar fr.epsi.demo.Helloworld'
+               sh '''
+                 cd target
+                 java -cp maven-hello-1.0.0-SNAPSHOT.jar fr.epsi.demo.Helloworld
+               '''
             }
         }
     }
