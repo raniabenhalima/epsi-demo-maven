@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.5.4-jdk-11'
+	        args '-v /data/repos/.m2:/root/.m2'
+         }
+    }
     tools {
         maven 'maven'
         jdk 'Java11'
@@ -7,7 +12,7 @@ pipeline {
     stages {
         stage('prepare') {
             steps {
-                echo "Prepare"
+               echo "prepare"
             }
         }
         stage('build') {
