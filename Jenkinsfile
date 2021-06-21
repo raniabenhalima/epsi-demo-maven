@@ -34,7 +34,7 @@ pipeline {
             steps {
                sh '''
                  cd target
-                 java -cp maven-hello-1.0.0-SNAPSHOT.jar fr.epsi.demo.Helloworld
+                 java -cp maven-hello-1.0.1-SNAPSHOT.jar fr.epsi.demo.Helloworld
                '''
             }
         }
